@@ -3,6 +3,10 @@
   "main": "worker.js",
   "compatibility_date": "2025-02-04",
 
+  "vars": {
+    "UPDATE_KEY": "SocialGatewayUpdate_2026_9x7K2mQ"
+  },
+
   "kv_namespaces": [
     {
       "binding": "TUNNELS",
