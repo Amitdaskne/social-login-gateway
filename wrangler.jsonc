@@ -1,0 +1,12 @@
+{
+  "name": "social-login-gateway",
+  "main": "worker.js",
+  "compatibility_date": "2025-02-04",
+
+  "kv_namespaces": [
+    {
+      "binding": "TUNNELS",
+      "id": "869ef82f0f0e4f5fba756adc4a5d6a07"
+    }
+  ]
+}
