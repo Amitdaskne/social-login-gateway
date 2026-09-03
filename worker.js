@@ -21,6 +21,17 @@ export default {
     }
 
     const url = new URL(request.url);
+    // TEMPORARY DIAGNOSTIC
+if (url.pathname === "/debug-secret") {
+  return Response.json(
+    {
+      updateKeyExists: Boolean(env.UPDATE_KEY),
+      updateKeyLength: env.UPDATE_KEY ? env.UPDATE_KEY.length : 0,
+      kvExists: Boolean(env.TUNNELS)
+    },
+    { headers: corsHeaders }
+  );
+}
 
     // Termux automatically updates the current tunnel URL.
     if (url.pathname === "/_update") {
